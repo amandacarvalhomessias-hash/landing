@@ -38,7 +38,7 @@ export default function Comparison() {
             <div className="px-5 py-3 text-neutral-500 dark:text-neutral-400">
               Assinatura tradicional
             </div>
-            <div className="px-5 py-3 text-orange-600 dark:text-orange-400">Assistente</div>
+            <div className="px-5 py-3 text-orange-600 dark:text-orange-400">Claude Pró IA - Créditos</div>
           </div>
           {ROWS.map((row, i) => (
             <div

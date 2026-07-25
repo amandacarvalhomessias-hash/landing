@@ -32,7 +32,7 @@ export default function ProductBenefits() {
     <section id="produto" className="mx-auto max-w-5xl px-4 py-16">
       <div className="mx-auto max-w-xl text-center">
         <h2 className="text-3xl font-semibold text-neutral-900 dark:text-neutral-50">
-          O que é o Assistente
+          O que é a Claude Pró IA - Créditos
         </h2>
         <p className="mt-3 text-neutral-600 dark:text-neutral-400">
           Um jeito simples e direto de ter acesso a uma IA poderosa, sem os

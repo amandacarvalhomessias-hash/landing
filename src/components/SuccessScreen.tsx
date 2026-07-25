@@ -43,7 +43,7 @@ export default function SuccessScreen({ result }: { result: SignupResult }) {
         Conta criada!
       </h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
-        Obrigado por confiar na Assistente. Guarde este token — é ele que dá
+        Obrigado por confiar na Claude Pró IA - Créditos. Guarde este token — é ele que dá
         acesso à sua conta ({result.credits.toLocaleString('pt-BR')} créditos,
         plano {result.plan}).
       </p>

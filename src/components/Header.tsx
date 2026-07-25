@@ -12,7 +12,7 @@ export default function Header() {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-orange-500 text-white">
             <Sparkles className="h-4.5 w-4.5" />
           </div>
-          <span className="font-semibold text-neutral-900 dark:text-neutral-50">Assistente</span>
+          <span className="font-semibold text-neutral-900 dark:text-neutral-50">Claude Pró IA - Créditos</span>
         </div>
 
         <nav className="hidden items-center gap-6 text-sm text-neutral-600 dark:text-neutral-400 sm:flex">
