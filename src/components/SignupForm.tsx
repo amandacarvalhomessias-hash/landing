@@ -10,7 +10,9 @@ export default function SignupForm({ onResult }: { onResult: (result: CheckoutRe
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [groupId, setGroupId] = useState(PLAN_GROUPS[0].id)
-  const [tierId, setTierId] = useState(PLAN_GROUPS[0].tiers[1].id)
+  const [tierId, setTierId] = useState(
+    (PLAN_GROUPS[0].tiers[1] ?? PLAN_GROUPS[0].tiers[0]).id,
+  )
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -19,7 +21,7 @@ export default function SignupForm({ onResult }: { onResult: (result: CheckoutRe
   const handleSelectGroup = (newGroupId: string) => {
     setGroupId(newGroupId)
     const group = PLAN_GROUPS.find((g) => g.id === newGroupId)
-    if (group) setTierId(group.tiers[1].id)
+    if (group) setTierId((group.tiers[1] ?? group.tiers[0]).id)
   }
 
   const handleSubmit = async (event: React.FormEvent) => {
