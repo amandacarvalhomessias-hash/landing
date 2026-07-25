@@ -11,7 +11,7 @@ export default function PlanGroupTabs({
   onSelect: (groupId: string) => void
 }) {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
       {groups.map((group) => {
         const selected = group.id === selectedId
         return (
