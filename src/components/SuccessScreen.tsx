@@ -1,4 +1,4 @@
-import { Check, Copy, Mail, MessageCircle } from 'lucide-react'
+import { Check, Copy, Mail, MessageCircle, ExternalLink } from 'lucide-react'
 import { useState } from 'react'
 import type { SignupResult } from '../lib/api'
 
@@ -6,6 +6,7 @@ import type { SignupResult } from '../lib/api'
 const WHATSAPP_URL = 'https://wa.me/5500000000000'
 const INSTAGRAM_URL = 'https://instagram.com/seuinstagram'
 const SUPPORT_EMAIL = 'suporte@bulbeenergia.com.br'
+const CHAT_URL = 'https://ia-pro-creditos-chat.netlify.app/'
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -65,6 +66,16 @@ export default function SuccessScreen({ result }: { result: SignupResult }) {
       <p className="mt-4 text-sm text-neutral-500 dark:text-neutral-400">
         Cole esse token na tela de acesso do chat pra começar a usar.
       </p>
+
+      <a
+        href={CHAT_URL}
+        target="_blank"
+        rel="noreferrer"
+        className="mt-6 inline-flex items-center gap-2 rounded-lg bg-orange-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-orange-600"
+      >
+        Acessar o chat
+        <ExternalLink className="h-4 w-4" />
+      </a>
 
       <div className="mt-10 rounded-2xl border border-neutral-200 bg-neutral-50 px-6 py-8 dark:border-neutral-800 dark:bg-neutral-900/60">
         <h2 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50">

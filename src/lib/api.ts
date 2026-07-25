@@ -1,9 +1,8 @@
 const CHECKOUT_URL =
-  import.meta.env.VITE_CHECKOUT_URL ??
-  'https://internal.bulbeenergia.com.br/conciliacao_bancaria/insert'
+  import.meta.env.VITE_CHECKOUT_URL ?? 'https://ia-backend-8q1m.onrender.com/checkout'
 const CHECKOUT_STATUS_URL =
   import.meta.env.VITE_CHECKOUT_STATUS_URL ??
-  'https://internal.bulbeenergia.com.br/conciliacao_bancaria/confirm'
+  'https://ia-backend-8q1m.onrender.com/checkout/status'
 
 export interface CheckoutData {
   name: string
